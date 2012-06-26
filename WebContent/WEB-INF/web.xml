@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>Library</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description>Book create class</description>
+    <display-name>AddBook</display-name>
+    <servlet-name>AddBook</servlet-name>
+    <servlet-class>net.library.servlets.AddBook</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddBook</servlet-name>
+    <url-pattern>/AddBook</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description>A servlet that lists all the books.</description>
+    <display-name>ListBooks</display-name>
+    <servlet-name>ListBooks</servlet-name>
+    <servlet-class>net.library.servlets.ListBooks</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ListBooks</servlet-name>
+    <url-pattern>/Books</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description>Keeps the books</description>
+    <display-name>Books</display-name>
+    <servlet-name>Books</servlet-name>
+    <servlet-class>net.library.servlets.Books</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Books</servlet-name>
+    <url-pattern>/Books</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Bookmanager</display-name>
+    <servlet-name>Bookmanager</servlet-name>
+    <servlet-class>net.library.servlets.Bookmanager</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Bookmanager</servlet-name>
+    <url-pattern>/Bookmanager</url-pattern>
+  </servlet-mapping>
+</web-app>
